@@ -1,0 +1,21 @@
+IB-TECH ePINs — APK BUILD KIT
+=============================
+
+Windows:
+1. Install Android Studio.
+2. Open this project folder in Android Studio.
+3. Let Gradle sync and install any missing Android SDK components.
+4. Double-click build-apk.bat, or run it from Command Prompt.
+5. APK output:
+   app\build\outputs\apk\debug\app-debug.apk
+
+PowerShell:
+   powershell -ExecutionPolicy Bypass -File .\build-apk.ps1
+
+For Google Play:
+Use Android Studio > Build > Generate Signed Bundle / APK.
+Generate a signed Android App Bundle (.aab) for Play Store publishing.
+
+IMPORTANT:
+- Never put Paystack secret keys in the Android app.
+- Configure the production API endpoint on the server/app before release.

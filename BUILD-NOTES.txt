@@ -1,0 +1,13 @@
+IB-TECH ePINs Android v1.2.0
+
+Release-ready source project.
+
+Current API default:
+https://ibtech-epins.onrender.com
+
+Website domain:
+https://ibtech.com
+
+For the final custom API domain, provision api.ibtech.com on the Node-capable backend host and change BuildConfig.IBTECH_API_BASE_URL in app/build.gradle.kts before the release build.
+
+This package intentionally does not contain a Paystack secret key or release signing key.
