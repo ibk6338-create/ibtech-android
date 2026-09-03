@@ -13,8 +13,13 @@ android { namespace = "com.ibtech.epins"; compileSdk = 35
         versionName = "1.2.0"
         buildConfigField("String", "IBTECH_API_BASE_URL", "\"https://ibtech-epins.onrender.com\"")
     }
-    buildFeatures { buildConfig = true }
-    buildTypes {
+  buildFeatures { buildConfig = true }
+
+compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+buildTypes {
         getByName("release") {
             isMinifyEnabled = false
             isShrinkResources = false
